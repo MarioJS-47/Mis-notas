@@ -1,0 +1,61 @@
+Niveles de configuracion
+--local
+--global
+--system
+
+
+Cambio de nombre
+$git config --global user.name "nombre"
+
+
+Cambio de correo electronico
+$git config --global user.email "correo"
+
+
+Visualizar lista de configuraciones
+$git config --global --list
+
+
+configuarcion de editor de codigo
+$git config --global core.editor "code --wait"
+(Esperar a guardar cambios hasta que cierre editor de codigo)  
+(wait, code -----> palabra exclusiva para definir VSCode como editor)
+
+
+Configurar colores de interfaz
+$git config --global color.vi true
+
+
+Compatibilidad de archivos en sistemas Windows, Mac y Linux
+$git config --global core.autocrlf true input
+(en caso de manejar sistemas Mac y Linux colocar "input")
+
+
+Agregar archivo al area de preparacion
+$git add "Nombre del archivo.extension"
+
+
+Consultar estado de archivos
+$git status
+
+
+Remover archivo de area de preparacion
+$git rm --cached "Nombre del archivo.extension"
+
+
+Agregar archivo de area de preparacion a servidor
+$git commit -m 
+(-m para agregar mensajes)
+
+
+Agregar archivo en servidor saltando pasos
+$git commit -a
+
+
+--------> Pasos para eliminar un archivo
+
+
+Agregar eliminacion
+$git add
+
+
