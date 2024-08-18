@@ -1,6 +1,15 @@
+%load_ext rpy2.ipython
+
+%%R
+install.packages("ggplot2")
+
+%%R
+install.packages("reshape2")
+
 # Cargar la librería necesaria
 library(ggplot2)
 
+%%R
 # Definir los datos
 dataS <- data.frame(
   "id" = as.character(c("HC", "HI", "HT", "HTP", "U6E", "UI6E", "UCHE", "UITI", "UIFH", "UTC6E")),
