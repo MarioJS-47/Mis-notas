@@ -1,0 +1,38 @@
+Buenos días, soy Mario Juarez y tengo 25 años, uno de mis mayores gustos es el desarrollo de software, aprender lenguajes de programación y uso de herramientas
+A continuación, les presento mi aportación
+ 
+¿Qué es data management?
+ 
+Es el proceso de recopilar, proteger y analizar grandes volúmenes de datos con el objetivo de obtener información valiosa para la toma de decisiones y mejorar los procesos de una organización.
+ 
+ 
+¿Qué es inteligencia de negocios?
+ 
+Es un conjunto de estrategias o herramientas que permiten a las organizaciones recopilar, almacenar, analizar y visualizar grandes volúmenes de datos con el objetivo de obtener información valiosa para la toma de decisiones.
+ 
+ 
+¿Porque es importante la administración del Bigdata en una organización?
+ 
+La administración del Big Data es esencial para las organizaciones que desean ser competitivas en el mercado actual. Al aprovechar el potencial de los datos, las empresas pueden tomar decisiones más inteligentes, mejorar sus operaciones y ofrecer una mejor experiencia a sus clientes.
+ 
+¿Cual es la importancia de un administrador de Bigdata en una organización?
+Es una figura clave en cualquier organización que busca aprovechar el potencial de grandes volúmenes de datos. Su roll va más allá de simplemente almacenar información, es el encargado de gestionar, analizar y transformar esos datos en conocimiento valioso
+ 
+¿Como utilizarías el data management dentro de alguna organización  o negocio para solucionar alguna problemática? desarrolla un ejemplo a continuación
+ 
+Disminución en las ventas de un café local
+ 
+Problema: El dueño del café ha notado una disminución en las ventas en los últimos meses, a pesar de no haber realizado cambios significativos en su menú o servicio.
+ 
+Acciones: 
+•	Se recolectan datos sobre las ventas diarias, los productos más vendidos y los menos vendidos.
+•	Se registran datos sobre los clientes, como la hora a la que suelen visitar el café, los días de la semana más concurridos y los productos que suelen comprar juntos.
+•	Se recopilan datos sobre el clima, como la temperatura y las precipitaciones, para analizar si afectan las ventas.
+•	Se analizan los datos para identificar patrones en las ventas, como días y horas pico, productos más populares y relación entre el clima y las ventas.
+•	Se comparan las ventas actuales con las de años anteriores para identificar tendencias a largo plazo.
+ 
+Resultado de análisis:
+•	Se observa que hay horas con poca afluencia de clientes, se puede ajustar el horario de apertura y cierre del café.
+•	Se identifican productos que se venden poco, se pueden eliminar del menú o introducir nuevos productos más atractivos.
+ 
+Al identificar las áreas de mejora, el dueño puede optimizar sus operaciones y reducir costos.
