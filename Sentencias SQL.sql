@@ -48,6 +48,22 @@ SELECT * FROM refacciones LIMIT 4;
 -- Consultar listado limitado a solo visualizar de registro 4 al 10
 SELECT * FROM refacciones LIMIT 4,10;
 
+-- Consulta agrupacion de datos basado en COUNT (Conteo), es posible aplicar operaciones con MIN, MAX, AVG, SUM
+SELECT categoria, COUNT(precio) FROM  refacciones
+GROUP BY categoria;
+
+-- Aplicar operacion total de la tabla
+SELECT SUM(precio) FROM refacciones;
+
+-- Consulta de total por GROUP BY
+SELECT categoria, count(*) FROM refacciones
+GROUP BY categoria;
+
+-- Consulta suma de precios por categoria de refacciones, agrupando por categoria, teniendo que la suma de precios sea mayor a 100
+SELECT categoria, SUM(precio)AS precio_categoria FROM  refacciones
+GROUP BY categoria
+HAVING precio_categoria > 100;
+
 --Cambiar tipo de dato a columna
 ALTER TABLE refacciones                
 MODIFY COLUMN descripcion TEXT(200);   
