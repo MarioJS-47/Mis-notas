@@ -39,6 +39,15 @@ SELECT * FROM refacciones WHERE descripcion LIKE '%ethernet%';
 -- Consulta LIKE para buscar registros que terminen con la palabra indicada                                    
 SELECT * FROM refacciones WHERE descripcion LIKE '%ethern';
 
+-- Realizar consulta de registros unicos descartando repetidos
+SELECT DISTINCT * FROM refacciones;
+
+-- Consultar todo de tabla limitando a 4 primeros registros
+SELECT * FROM refacciones LIMIT 4;
+
+-- Consultar listado limitado a solo visualizar de registro 4 al 10
+SELECT * FROM refacciones LIMIT 4,10;
+
 --Cambiar tipo de dato a columna
 ALTER TABLE refacciones                
 MODIFY COLUMN descripcion TEXT(200);   
@@ -51,3 +60,8 @@ WHERE codigo = 40061800;
 UPDATE refacciones                     
 SET precio = 350.3                     
 WHERE codigo = 40061762;               
+
+
+
+
+
