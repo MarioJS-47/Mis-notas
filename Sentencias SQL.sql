@@ -73,6 +73,36 @@ CASE
 END
 FROM refacciones
 
+-- Uniones JOIN
+
+--
+SELECT A.nombre, B.profesion FROM TABLA_IZQ A
+INNER JOIN
+TABLA_DER B
+ON A.ID = B.ID
+
+-- 
+SELECT A.nombre, B.profesion FROM TABLA_IZQ A
+LEFT JOIN
+TABLA_DER B
+ON A.ID = B.ID
+
+-- 
+SELECT A.nombre, B.profesion FROM TABLA_IZQ A
+RIGHT JOIN
+TABLA_DER B
+ON A.ID = B.ID
+
+--
+SELECT A.nombre, B.profesion FROM TABLA_IZQ A
+FULL JOIN
+TABLA_DER B
+ON A.ID = B.ID
+
+-- CROSS JOIN
+SELECT A.nombre, B.profesion FROM TABLA_IZQ A, TABLA_DER B
+
+
 --Cambiar tipo de dato a columna
 ALTER TABLE refacciones                
 MODIFY COLUMN descripcion TEXT(200);   
