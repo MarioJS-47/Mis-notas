@@ -64,6 +64,15 @@ SELECT categoria, SUM(precio)AS precio_categoria FROM  refacciones
 GROUP BY categoria
 HAVING precio_categoria > 100;
 
+-- Consultar empleando clasificacion de registros
+SELECT Codigo
+CASE
+  WHEN precio >= 500 AND precio <= 600 THEN 'Costoso'
+  WHEN precio >= 400 AND precio <= 500 THEN 'Precio regular'
+  ELSE 'Precio bajo'
+END
+FROM refacciones
+
 --Cambiar tipo de dato a columna
 ALTER TABLE refacciones                
 MODIFY COLUMN descripcion TEXT(200);   
@@ -76,6 +85,7 @@ WHERE codigo = 40061800;
 UPDATE refacciones                     
 SET precio = 350.3                     
 WHERE codigo = 40061762;               
+
 
 
 
