@@ -75,34 +75,38 @@ FROM refacciones
 
 -- Uniones JOIN
 
---
+-- Unir 2 o mas tablas a la vez a travez de un campo en comun
 SELECT A.nombre, B.profesion FROM TABLA_IZQ A
 INNER JOIN
 TABLA_DER B
 ON A.ID = B.ID
 
--- 
+-- Mantiene todos los registros de la tabla de la izquierda y devuelve unicamente los correspondientes de la derecha
 SELECT A.nombre, B.profesion FROM TABLA_IZQ A
 LEFT JOIN
 TABLA_DER B
 ON A.ID = B.ID
 
--- 
+-- Mantiene todos los registros de la tabla de la derecha y devuelve unicamente los correspondientes de la izquierda
 SELECT A.nombre, B.profesion FROM TABLA_IZQ A
 RIGHT JOIN
 TABLA_DER B
 ON A.ID = B.ID
 
---
+-- Mantiene y devuelve todos los registros de las tablas
 SELECT A.nombre, B.profesion FROM TABLA_IZQ A
 FULL JOIN
 TABLA_DER B
 ON A.ID = B.ID
 
--- CROSS JOIN
+-- CROSS JOIN: Devuelve el producto cartesiano de los registros de las tablas
 SELECT A.nombre, B.profesion FROM TABLA_IZQ A, TABLA_DER B
 
-
+-- Permite unir 2 o mas tablas(Implictamente ejecuta DISTINCT) el numero de campos de las tablas debe ser igual (Mismos campos y mismos tipos)
+-- <Sentencia 1>
+    UNION
+-- <Sentencia 2>
+    
 --Cambiar tipo de dato a columna
 ALTER TABLE refacciones                
 MODIFY COLUMN descripcion TEXT(200);   
