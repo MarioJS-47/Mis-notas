@@ -120,7 +120,14 @@ UPDATE refacciones
 SET precio = 350.3                     
 WHERE codigo = 40061762;               
 
+-- Marca el inicio de una secuencia de operaciones en la base de datos que deben tratarse como una sola unidad.
+START TRANSACTION;
 
+-- Deshace todos los cambios realizados dentro de la transacción.
+ROLLBACK:
+    
+-- Confirma y guarda permanentemente todos los cambios realizados dentro de la transacción.
+COMMIT;
 
 
 
