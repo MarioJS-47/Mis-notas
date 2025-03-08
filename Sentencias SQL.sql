@@ -10,7 +10,10 @@ CREATE TABLE refacciones(
     descripcion VARCHAR(200),
     categoria VARCHAR(20),   
     precio DECIMAL(10,2) -- Cantidad de cifras enteras / Cantidad de cifras decimales
-);                           
+);
+
+-- Renombrar tabla
+RENAME TABLE pedidos TO orders;
 
 -- Inserccion de datos                      
 INSERT INTO refacciones (codigo, descripcion, categoria, precio) VALUES (40061762, 'Cable ethernet RJ45 a RJ45 - 10m', 'electrica', 250.20);                                      
