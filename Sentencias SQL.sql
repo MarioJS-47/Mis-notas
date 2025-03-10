@@ -123,6 +123,10 @@ UPDATE refacciones
 SET precio = 350.3                     
 WHERE codigo = 40061762;               
 
+-- Creacion de una llave foranea
+ALTER TABLE orders ADD CONSTRAINT FK_code_catalog
+FOREIGN KEY (CODE) REFERENCES catalog(CODE);
+
 -- Marca el inicio de una secuencia de operaciones en la base de datos que deben tratarse como una sola unidad.
 START TRANSACTION;
 
@@ -132,6 +136,15 @@ ROLLBACK:
 -- Confirma y guarda permanentemente todos los cambios realizados dentro de la transacción.
 COMMIT;
 
+-- Estructura de un Procedure
+DELIMITER //
+CREATE PROCEDURE nombre_procedure()
+BEGIN
+    DECLARE texto VARCHAR(10) DEFAULT 'Hola';
+    SELECT texto;
+END //
+DELIMITER
 
-
+-- Llamado de procedimiento
+CALL nombre_procedure;
 
